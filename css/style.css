@@ -1,9 +1,12 @@
 * {box-sizing:border-box;}
-body {
-  background-color: #F5EEEE;
+html, body {
+  height: 100%;
   margin: 0;
+}
+body {
+  background-color: #f6f3ee;
   font-family: 'Rubik', sans-serif;
-  color: #001133;
+  color: #403F48;
 }
 
 header {
@@ -12,7 +15,7 @@ header {
 
 h1 {
   font-family: 'Indie Flower', cursive;
-  color: #EA21A2;
+  color: #6a7f66;
   font-size: 50px;
 }
 
@@ -22,11 +25,23 @@ h1 {
 }
 
 form input {
-margin-bottom: 20px;
+  margin-bottom: 20px;
+  border-width: 0px;
+  padding: 7px 11px;
+  background-color: #ffffff;
+  font-size: 14px;
 }
 
-form button {
-  background-color: #001133;
+#street {
+  margin-left: 7px;
+}
+
+#city {
+  margin-left: 24px;
+}
+
+button {
+  background-color: #403F48;
   color: #F5EEEE;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -36,35 +51,65 @@ form button {
   border-radius: 3px;
 }
 
-form button:hover,
-form button:active,
-form button:focus {
-  background-color: #002266;
+button:hover,
+button:active,
+button:focus {
+  background-color: #403F48;
 }
 
 #image_gallery img {
+  width: 100%;
+  max-width: 350px;
   border-radius: 10px;
-  /*width: 400px;
-  height: 200px;*/
   display: block;
-  margin: 5px;
+  margin: 5px auto;
+}
+
+.content_wrapper {
+  min-height: calc(85vh - 90px);
+  margin: 10px;
+}
+
+.article-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.article-list a {
+  text-decoration: none;
+  color: #658525;
+}
+
+.article-list a:hover,
+.article-list a:focus,
+.article-list a:active {
+  color: #677e79;
 }
 
 
 /* footer */
 footer {
-  background-color: #001133;
+  background-color: #403F48;
   color: #F5EEEE;
   text-align: center;
   padding: 10px 0;
-  /*position: absolute;*/
-  right: 0;
-  bottom: 0;
-  left: 0;
+  height: 95px;
+}
+
+footer a {
+  color: #F5EEEE;
+  /*text-decoration: none;*/
+}
+
+@media only screen and (min-width: 500px) {
+  .content_wrapper {
+    max-width: 460px;
+    margin: auto;
+  }
 }
 
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 900px) {
   .content_wrapper {
     max-width: 1200px;
     margin: auto;
@@ -73,8 +118,8 @@ footer {
   }
 
   main {
-    width: 70%;
-    /*height: 80vh;*/
+    width: 60%;
+    margin: 0 5px 0 10px;
   }
 
   #image_gallery {
@@ -86,49 +131,18 @@ footer {
   }
 
   aside {
-    width: 30%;
+    width: 40%;
+    margin: 0 10px 0 5px;
   }
 }
 
-/*.bgimg {
-    position:fixed;
-    top: 0;
-    left: 0;
-    width:100%;
-    z-index:-1;
-    opacity:1;
-}*/
-/*
-.greeting {
-    color:black;
-    text-shadow: 1px 1px 3px rgba(255,255,255, .5);
-    text-align: center;
-}
+@media only screen and (min-width: 1200px) {
 
-.wikipedia-container {
-    float:right;
-    width:290px;
-    padding:10px;
-    margin-right: 10px;
-    background-color: rgba(255,255,255,0.7);
-}
+  main {
+    width: 70%;
+  }
 
-.nytimes-container {
-    padding: 10px;
-    margin-right:300px;
-    background-color: rgba(255,255,255,0.7);
+  aside {
+    width: 30%;
+  }
 }
-
-.article-list {
-    margin: 0;
-    padding: 0;
-}
-
-.article {
-    list-style-type: none;
-    padding:10px;
-    border-top: 1px solid #CCC;
-}
-.article:first-child {
-    border-top:none;
-}*/

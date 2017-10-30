@@ -61,6 +61,7 @@ function loadData() {
         $('#nytimes-articles').html("No articles found");
       }
 
+      // click
       $('.more').on('click', function(){
       if( $(this).hasClass('less') ){
         $(this).text('More...').removeClass('less');
@@ -71,11 +72,9 @@ function loadData() {
 
     });
 
-
-
-
     }).fail(function(err) {
-      throw err;
+      // throw err;
+      $('#nytimes-articles').html('New York Times Articles Could Not Be loaded');
     });
 
 
