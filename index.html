@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Moving Companion</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Hello! I'm Your Moving Companion!</h1>
+  </header>
+
+  <div class="content_wrapper">
+    <main>
+      <h2 id="greeting" class="greeting">Enter the address where you want to live</h2>
+      <form id="form-container" class="form-container">
+          <label for="street">Street: </label><input type="text" id="street" value=""></br>
+          <label for="city">City: </label><input type="text" id="city" value=""></br>
+          <button id="submit-btn">Submit</button>
+      </form>
+
+      <div id="image_gallery">
+
+      </div>
+    </main>
+
+    <aside>
+      <div class="wikipedia-container">
+          <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
+          <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+      </div>
+      <div class="nytimes-container">
+          <h3 id="nytimes-header">New York Times Articles</h3>
+          <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</ul>
+      </div>
+    </aside>
+  </div> <!-- end content wrapper -->
+  <!-- <a href=""></a> -->
+
+
+  <footer>
+    <p>Developed by Anna Karlovskaya with Udacity</p>
+    <smal>2017</smal>
+  </footer>
+
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

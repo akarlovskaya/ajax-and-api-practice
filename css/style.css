@@ -1,0 +1,134 @@
+* {box-sizing:border-box;}
+body {
+  background-color: #F5EEEE;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  color: #001133;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  color: #EA21A2;
+  font-size: 50px;
+}
+
+/* main content */
+.content_wrapper {
+  margin: 0 20px;
+}
+
+form input {
+margin-bottom: 20px;
+}
+
+form button {
+  background-color: #001133;
+  color: #F5EEEE;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 20px 0;
+  border: 0;
+  border-radius: 3px;
+}
+
+form button:hover,
+form button:active,
+form button:focus {
+  background-color: #002266;
+}
+
+#image_gallery img {
+  border-radius: 10px;
+  /*width: 400px;
+  height: 200px;*/
+  display: block;
+  margin: 5px;
+}
+
+
+/* footer */
+footer {
+  background-color: #001133;
+  color: #F5EEEE;
+  text-align: center;
+  padding: 10px 0;
+  /*position: absolute;*/
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+@media only screen and (min-width: 500px) {
+  .content_wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  main {
+    width: 70%;
+    /*height: 80vh;*/
+  }
+
+  #image_gallery {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+  }
+
+  aside {
+    width: 30%;
+  }
+}
+
+/*.bgimg {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index:-1;
+    opacity:1;
+}*/
+/*
+.greeting {
+    color:black;
+    text-shadow: 1px 1px 3px rgba(255,255,255, .5);
+    text-align: center;
+}
+
+.wikipedia-container {
+    float:right;
+    width:290px;
+    padding:10px;
+    margin-right: 10px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.nytimes-container {
+    padding: 10px;
+    margin-right:300px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.article-list {
+    margin: 0;
+    padding: 0;
+}
+
+.article {
+    list-style-type: none;
+    padding:10px;
+    border-top: 1px solid #CCC;
+}
+.article:first-child {
+    border-top:none;
+}*/
