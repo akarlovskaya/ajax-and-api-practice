@@ -70,20 +70,41 @@ button:focus {
   margin: 10px;
 }
 
-.article-list {
+.article-list,
+#wikipedia-links {
   list-style-type: none;
   padding: 0;
 }
 
-.article-list a {
+#wikipedia-links li {
+  padding-top: 10px;
+  line-height: 25px;
+}
+
+#wikipedia-links li:before {
+  content: url("../backpack.png");
+  padding: 0 5px 0 0;
+  vertical-align: -15%;
+}
+
+
+.article-list a,
+#wikipedia-links a {
   text-decoration: none;
   color: #658525;
 }
 
 .article-list a:hover,
 .article-list a:focus,
-.article-list a:active {
+.article-list a:active,
+#wikipedia-links a:hover,
+#wikipedia-links a:focus,
+#wikipedia-links a:active {
   color: #677e79;
+}
+
+.nytimes-container h3 {
+  margin-top: 40px;
 }
 
 
